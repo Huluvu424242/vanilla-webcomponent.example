@@ -2,7 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
     <div>
         <p>Text vor Slot</p>
-        <slot></slot>
+        <slot name="main"></slot>
         <p>Text nach Slot</p>
     </div>
 `;

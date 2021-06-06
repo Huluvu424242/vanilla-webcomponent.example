@@ -4,14 +4,23 @@
         <meta charset="utf-8">
         <title>Demo von Vanilla Webcomponents</title>
         <script type="module" src="src/vwc-slots-lightdom.js"></script>
+
+        <style>
+            body {
+                background: lightgoldenrodyellow;
+            }
+            h1,h2 {
+                color:darkblue;
+            }
+        </style>
     </head>
     <body>
 
+<h1>Beispiel für Slots ohne Shadow DOM</h1>
         <vwc-slots-lightdom>
-            <div slot="main">
-                <h1>Das ist eine Überschrift</h1>
-                <p> Das ist ein Absatz </p>
-            </div>
+                <h2>Das ist eine Überschrift im LightDOM, gestyled background und color von außen</h2>
+                <div slot="main"> Das ist ein Absatz verbunden mit dem Slot main, gestyled background von außen
+                    und color von Innen </div>
         </vwc-slots-lightdom>
     </body>
 </html>

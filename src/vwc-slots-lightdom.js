@@ -15,9 +15,11 @@ export class VwcSlotsLightdom extends HTMLElement {
     }
 
     async connectedCallback() {
-
+        if(console){
+            console.log("####VWC eingehängt");
+        }
     }
 
 }
 
-customElements.define('vwc-slots-lightdom', VwcSlotsLightdom);
+window.customElements.define('vwc-slots-lightdom', VwcSlotsLightdom);

@@ -13,7 +13,7 @@ div {
 </style>
         <p>Innerer Text vor Slot gestyled background von außen und color von innen</p>
         <slot name="main"></slot>
-        <p id="text">Innerer Text nach Slot gestyled background und color von innen</p>
+        <p id="text">Innerer Text nach Slot gestyled background und color von innen, style innen überschreibt außen background</p>
 `;
 
 export class VwcSlotsLightdom extends HTMLElement {

@@ -39,10 +39,15 @@
                 console.log("#2 shadowRoot first children:"+shadowRoot.firstElementChild);
                 console.log("#2 shadowRoot element by id 2first:"+shadowRoot.getElementById("2first"));
                 const firstElement = shadowRoot.getElementById("2first");
+                const text2 = shadowRoot.getElementById("text2");
+
                 const newTextNode = document.createElement('h1');
                 newTextNode.innerHTML='Injected Text';
                 console.log("#2 newTextNode:"+newTextNode);
                 shadowRoot.replaceChild(newTextNode,firstElement);
+                const newTextNode2 = document.createElement('p');
+                newTextNode2.innerHTML='Injected Text2';
+                text2.appendChild(newTextNode2);
             }
         </script>
         <h1>Analyse Shadow DOM von außen</h1>

@@ -14,7 +14,9 @@ div {
         <h3 id="2first">Shadow DOM Example</h3>
         <p>Innerer Text vor Slot gestyled background von außen und color von innen</p>
         <slot name="main"></slot>
-        <p id="text">Innerer Text nach Slot gestyled background und color von innen, style innen überschreibt außen background</p>
+        <p id="text1">Innerer Text nach Slot gestyled background und color von innen, style innen überschreibt außen background</p>
+        <p id="text2">2. Text</p>
+        <p id="text3">3.Text</p>
 `;
 
 export class VwcSlotsLightdom extends HTMLElement {

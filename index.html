@@ -35,6 +35,8 @@
             function addShadowText(){
                 const shadowRoot = document.getElementById("2").shadowRoot;
                 console.log("#2 shadowRoot:"+shadowRoot);
+                console.log("#2 shadowRoot children:"+shadowRoot.children);
+                console.log("#2 shadowRoot first children:"+shadowRoot.firstElementChild);
                 const firstElement = shadowRoot.querySelector("#2first");
                 const newTextNode = document.createElement('h1');
                 newTextNode.innerHTML='Injected Text';

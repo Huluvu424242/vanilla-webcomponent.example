@@ -42,7 +42,7 @@
                 const newTextNode = document.createElement('h1');
                 newTextNode.innerHTML='Injected Text';
                 console.log("#2 newTextNode:"+newTextNode);
-                firstElement.replaceChild(newTextNode);
+                shadowRoot.replaceChild(newTextNode,firstElement);
             }
         </script>
         <h1>Analyse Shadow DOM von außen</h1>

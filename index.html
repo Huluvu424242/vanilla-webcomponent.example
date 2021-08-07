@@ -38,7 +38,7 @@
                 console.log("#2 shadowRoot children:"+shadowRoot.children);
                 console.log("#2 shadowRoot first children:"+shadowRoot.firstElementChild);
                 console.log("#2 shadowRoot element by id 2first:"+shadowRoot.getElementById("2first"));
-                const firstElement = shadowRoot.firstElementChild();
+                const firstElement = shadowRoot.firstElementChild;
                 const newTextNode = document.createElement('h1');
                 newTextNode.innerHTML='Injected Text';
                 console.log("#2 newTextNode:"+newTextNode);

@@ -17,17 +17,27 @@
     </head>
     <body>
 
-<h1>Beispiel für Slots ohne Shadow DOM</h1>
-        <vwc-slots-lightdom>
+        <h1>Beispiel für Slots ohne Shadow DOM</h1>
+        <vwc-slots-lightdom id="1">
                 <h2>Das ist eine Überschrift im LightDOM, gestyled background und color von außen</h2>
                 <div slot="main"> Das ist ein Absatz verbunden mit dem Slot main, gestyled background von außen
                     und color von Innen </div>
         </vwc-slots-lightdom>
         <hr>
-        <vwc-slots-shadowdom>
+        <h1>Beispiel für Slots mit Shadow DOM</h1>
+        <vwc-slots-shadowdom id="2">
             <h2>Das ist eine Überschrift im LightDOM, gestyled background und color von außen</h2>
             <div slot="main"> Das ist ein Absatz verbunden mit dem Slot main, gestyled background von außen
                 und color von Innen </div>
         </vwc-slots-shadowdom>
+        <hr>
+        <script>
+            function addShadowText(){
+                const shadowRoot = document.getElementById("2").shadowRoot;
+                console.output("#2:"+shadowRoot);
+            }
+        </script>
+        <h1>Analyse Shadow DOM von außen</h1>
+        <button onclick="addShadowText()">Add Text Node in Shadow DOM von außen</button>
     </body>
 </html>

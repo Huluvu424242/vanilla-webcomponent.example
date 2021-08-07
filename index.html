@@ -34,8 +34,9 @@
         <script>
             function addShadowText(){
                 const shadowRoot = document.getElementById("2").shadowRoot;
-                console.log("#2:"+shadowRoot);
+                console.log("#2 shadowRoot:"+shadowRoot);
                 const newTextNode = document.createElement('<h1>Injected Text</h1>');
+                console.log("#2 newTextNode:"+newTextNode);
                 shadowRoot.appendChild(newTextNode);
             }
         </script>

@@ -35,6 +35,8 @@
             function addShadowText(){
                 const shadowRoot = document.getElementById("2").shadowRoot;
                 console.log("#2:"+shadowRoot);
+                const newTextNode = document.createElement('<h1>Injected Text</h1>');
+                shadowRoot.appendChild(newTextNode);
             }
         </script>
         <h1>Analyse Shadow DOM von außen</h1>

@@ -11,7 +11,7 @@ div {
     background: lightgray;
 }
 </style>
-        <h3>Shadow DOM Example</h3>
+        <h3 id="2first">Shadow DOM Example</h3>
         <p>Innerer Text vor Slot gestyled background von außen und color von innen</p>
         <slot name="main"></slot>
         <p id="text">Innerer Text nach Slot gestyled background und color von innen, style innen überschreibt außen background</p>
